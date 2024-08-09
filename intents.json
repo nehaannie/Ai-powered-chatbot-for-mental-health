@@ -1,0 +1,55 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hello", "Hey", "Good morning", "Good evening", "How are you?"],
+        "responses": ["Hello! How can I help you today?", "Hi there! What can I do for you?", "Hey! How can I assist you?"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Goodbye", "See you later", "Bye", "Have a nice day"],
+        "responses": ["Goodbye! Take care.", "See you later! Have a great day.", "Bye! Feel free to reach out anytime."]
+      },
+      {
+        "tag": "help",
+        "patterns": ["I need help", "Can you help me?", "Help me", "I need assistance"],
+        "responses": ["I'm here to help. What do you need assistance with?", "Please tell me what you're struggling with, and I'll do my best to assist."]
+      },
+      {
+        "tag": "mental_health",
+        "patterns": ["What is mental health?", "Why is mental health important?", "Tell me about mental health"],
+        "responses": ["Mental health refers to our emotional, psychological, and social well-being. It affects how we think, feel, and act.", "Good mental health is crucial for our overall well-being and daily functioning. It influences how we handle stress, relate to others, and make choices."]
+      },
+      {
+        "tag": "depression",
+        "patterns": ["What is depression?", "Can you explain depression?", "How do I know if I am depressed?"],
+        "responses": ["Depression is a mental health disorder characterized by persistent feelings of sadness, hopelessness, and a lack of interest in activities once enjoyed.", "If you feel persistent sadness, loss of interest in activities, or have trouble concentrating, it might be a sign of depression. It's important to talk to a mental health professional for a proper diagnosis."]
+      },
+      {
+        "tag": "anxiety",
+        "patterns": ["What is anxiety?", "How does anxiety affect us?", "Can you tell me about anxiety?"],
+        "responses": ["Anxiety is a feeling of worry, nervousness, or unease about something with an uncertain outcome. It can affect our daily lives and mental well-being.", "Anxiety can cause physical symptoms like increased heart rate, sweating, and restlessness. It can also affect our thoughts and behaviors."]
+      },
+      {
+        "tag": "self_care",
+        "patterns": ["How can I take care of myself?", "What are some self-care tips?", "Tell me about self-care"],
+        "responses": ["Self-care involves activities and practices that we engage in to maintain and improve our health and well-being.", "Some self-care tips include regular exercise, a balanced diet, adequate sleep, mindfulness practices, and engaging in activities you enjoy."]
+      },
+      {
+        "tag": "resources",
+        "patterns": ["Where can I find mental health resources?", "Can you suggest mental health resources?", "Tell me about mental health support resources"],
+        "responses": ["There are various resources available such as mental health hotlines, therapy services, and support groups.", "You can reach out to local mental health organizations, online therapy platforms, or talk to a healthcare provider for recommendations."]
+      },
+      {
+        "tag": "suicide",
+        "patterns": ["I feel like I want to hurt myself", "I'm having thoughts of suicide", "What should I do if I'm feeling suicidal?"],
+        "responses": ["I'm really sorry you're feeling this way, but I'm not equipped to help. Please talk to a mental health professional or call emergency services immediately.", "Reach out to a trusted friend, family member, or counselor. Remember, help is available and there are people who care about you."]
+      },
+      {
+        "tag": "fact",
+        "patterns": ["Tell me a mental health fact", "Give me a fact about mental health", "Mental health facts"],
+        "responses": ["Did you know that approximately 1 in 5 adults in the U.S. experience mental illness each year?", "Mental health conditions can affect anyone, regardless of age, gender, or background. Early intervention and treatment can make a significant difference."]
+      }
+    ]
+  }
+  

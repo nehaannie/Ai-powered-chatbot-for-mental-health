@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mental Health Bot</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        body {
+            background-color: rgb(155, 203, 219);
+            text-align: center;
+            color: #fff;
+            font-family: Arial, sans-serif;
+        }
+
+        .msger-chat {
+            max-width: 600px;
+            margin: 20px auto;
+            background: #fff;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: 400px;
+            overflow-y: auto;
+        }
+
+        .msger-inputarea {
+            display: flex;
+            max-width: 600px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .msger-input {
+            flex: 1;
+            border-radius: 5px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-right: 10px;
+        }
+
+        .msger-send-btn {
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .msger-send-btn:hover {
+            background-color: #45a049;
+        }
+
+        .msg {
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 10px;
+        }
+
+        .msg-img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+        }
+
+        .msg-bubble {
+            max-width: 400px;
+            padding: 10px;
+            border-radius: 10px;
+            background: #ececec;
+            color: #000;
+        }
+
+        .right-msg .msg-bubble {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .right-msg {
+            justify-content: flex-end;
+        }
+
+        .left-msg {
+            justify-content: flex-start;
+        }
+
+        .msg-container {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    margin-bottom: 10px;
+                     }
+ 
+        .user-msg, .bot-msg {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; /* Space between user and bot messages */
+    max-width: 70%; /* Adjust width as needed */
+     } 
+
+         .user-msg {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+      }
+
+        .bot-msg {
+    background-color: #ececec;
+    padding: 5px 10px;
+    border-radius: 5px;
+       }
+
+/* Optional: Style for message names */
+          .msg-info-name {
+               font-weight: bold;
+                  }
+
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Calm Space - Mental Health Bot</h2>
+    <h4>Welcome to Calm Space, a safe and supportive space where you can share your thoughts and feelings without fear of judgement.</h4>
+    <div id="chatbot" class="msger-chat">
+        <!-- Chat messages will be appended here -->
+    </div>
+    <form class="msger-inputarea">
+        <input type="text" class="msger-input" id="textInput" placeholder="Enter your message...">
+        <button type="submit" class="msger-send-btn">Send</button>
+    </form>
+    <script src="{{ url_for('static', filename='js/bot.js') }}"></script>
+</body>
+</html>
